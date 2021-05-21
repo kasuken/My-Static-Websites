@@ -1,0 +1,128 @@
+body {
+  background-color: #242629;
+  color: white;
+  font-size: 16px;
+}
+
+a {
+  color: rgb(44, 182, 125);
+}
+
+a:visited {
+  color: rgb(44, 182, 125);
+}
+
+a:hover {
+  color: white;
+}
+
+.box {
+  background: rgb(22, 22, 26);
+  color: white;
+  width: 650px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 300px;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.boxyoutube {
+  height: 360px;
+}
+
+.header {
+  color: white !important;
+}
+
+.boxsmall {
+  height: 80px;
+}
+
+.boxsmall .column {
+  padding: 0;
+}
+
+.boxsmall .title {
+  color: white;
+  font-size: 26px;
+  vertical-align: bottom;
+}
+
+.boxdoubleleft {
+  height: 200px;
+  float: right;
+  width: 315px;
+  font-size: 34px;
+  line-height: 36px;
+  background-image: url('/images/twitch.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #242629;
+}
+
+.boxdoubleleft > .subtitle {
+  margin-top: 78px;
+  text-align: left;
+  color: rgb(22, 22, 26);
+}
+
+.boxdoubleleft p {
+  text-align: right;
+}
+
+.boxdoubleleft a {
+  color: white;
+}
+
+.boxdoubleleft  a:hover {
+  color: rgb(22, 22, 26);
+}
+
+.boxdoubleright {
+  height: 200px;
+  margin-right: 0;
+  margin-left: 0;
+  width: 315px;
+  font-size: 42px;
+  font-weight: 800;
+  background: rgb(44, 182, 125);
+  line-height: 36px;
+  color: #242629;
+}
+
+.boxdoubleright > .subtitle {
+  margin-top: 40px;
+  color: rgb(22, 22, 26);
+}
+
+.boxdoubleright a {
+  color: rgb(22, 22, 26);
+}
+
+.boxdoubleright  a:hover {
+  color: white;
+}
+
+.boxsetup {
+    background: url('/images/studio.jpeg');
+    background-repeat: no-repeat;
+    background-position: left; 
+    background-attachment: local;
+}
+
+.boxsetup .subtitle {
+    margin-top: 190px;
+    color: rgb(148, 161, 178);
+}
+
+.footer {
+  background: rgb(22, 22, 26);
+  padding: 1rem 1.5rem 1rem;
+  color: rgb(148, 161, 178);
+}
+
+.academylogo {
+  height: 65px !important;
+  width: auto !important;
+}
