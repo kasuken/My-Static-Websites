@@ -1,5 +1,4 @@
-name: Azure Static Web Apps CI/CD
-
+name: links.emanuelebartolesi.com
 on:
   push:
     branches:
