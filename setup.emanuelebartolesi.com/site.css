@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.desk-img__wrp {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 5px 10px 35px 5px rgba(0, 0, 0, 0.5);
+}
+.desk-img__wrp .desk-img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.desk__hotspot {
+  position: absolute;
+  border-radius: 50%;
+}
+.desk__hotspot--toggle {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: inherit;
+  background-image: linear-gradient(223deg, #C850C0 0%, #FFCC70 100%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: background-color 0.4s cubic-bezier(0.6, -0.05, 0.01, 0.99), transform 0.4s cubic-bezier(0.6, -0.05, 0.01, 0.99);
+}
+.desk__hotspot--toggle:hover {
+  transform: scale(0.95);
+}
+.desk__hotspot--toggle::before, .desk__hotspot--toggle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #ffffff;
+  transition: transform 0.2s cubic-bezier(0.6, -0.05, 0.01, 0.99);
+}
+.desk__hotspot--toggle::before {
+  height: 12px;
+  width: 2px;
+}
+.desk__hotspot--toggle::after {
+  height: 2px;
+  width: 12px;
+}
+.desk__hotspot.visited .desk__hotspot--toggle {
+  background-image: none;
+  background-color: #ccc;
+}
+.desk__hotspot.visited::after {
+  -webkit-animation: none;
+          animation: none;
+}
+.desk__hotspot.open .desk__hotspot--toggle {
+  transform-origin: center;
+  transform: rotate(45deg);
+}
+.desk__hotspot.open .desk__hotspot--content {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+  transition-timing-function: cubic-bezier(0.6, -0.05, 0.01, 0.99);
+}
+.desk__hotspot--content {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  text-align: left;
+  line-height: 1.5;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2em 1em 1em;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+}
+.desk__hotspot--content-title {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #000000;
+}
+.desk__hotspot--content-body {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0;
+  margin-top: 10px;
+  color: #000000;
+}
+.desk__hotspot--closingIcon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 44px;
+  width: 44px;
+  cursor: pointer;
+}
+.desk__hotspot--closingIcon::before, .desk__hotspot--closingIcon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  background-color: #9e9e9e;
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+.desk__hotspot--closingIcon::before {
+  height: 16px;
+  width: 2px;
+}
+.desk__hotspot--closingIcon::after {
+  height: 2px;
+  width: 16px;
+}
+.desk__hotspot::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  background-color: transparent;
+  -webkit-animation: setup-pulse 2s infinite;
+          animation: setup-pulse 2s infinite;
+}
+.desk__hotspot:nth-of-type(1) {
+  top: 30%;
+  left: 56%;
+}
+.desk__hotspot:nth-of-type(2) {
+  top: 54%;
+  left: 9%;
+}
+.desk__hotspot:nth-of-type(3) {
+  top: 40%;
+  left: 76%;
+}
+.desk__hotspot:nth-of-type(4) {
+  top: 21%;
+  left: 29%;
+}
+.desk__hotspot:nth-of-type(5) {
+  top: 68%;
+  left: 29%;
+}
+.desk__hotspot:nth-of-type(6) {
+  top: 50%;
+  left: 34%;
+}
+.desk__hotspot:nth-of-type(7) {
+  top: 16%;
+  left: 10%;
+}
+.desk__hotspot:nth-of-type(8) {
+  top: 34%;
+  left: 16%;
+}
+.desk__hotspot:nth-of-type(9) {
+  top: 52%;
+  left: 47%;
+}
+
+.credits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 15px;
+}
+.credits__link {
+  color: inherit;
+  font-weight: bold;
+}
+.credits__avatar {
+  display: inline-block;
+  max-width: 30px;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.github-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(-1, 1);
+  border: 0;
+  fill: #C850C0;
+  color: #ffffff;
+}
+.github-corner:hover .octo-arm {
+  -webkit-animation: octocat-wave 560ms ease-in-out;
+          animation: octocat-wave 560ms ease-in-out;
+}
+
+@-webkit-keyframes setup-pulse {
+  0% {
+    box-shadow: inset 0 0 1px 1px rgba(200, 80, 192, 0.8);
+  }
+  50% {
+    box-shadow: inset 0 0 1px 1px rgba(200, 80, 192, 0.8);
+  }
+  100% {
+    transform: scale(1.6);
+    box-shadow: inset 0 0 1px 1px rgba(200, 80, 192, 0);
+  }
+}
+
+@keyframes setup-pulse {
+  0% {
+    box-shadow: inset 0 0 1px 1px rgba(200, 80, 192, 0.8);
+  }
+  50% {
+    box-shadow: inset 0 0 1px 1px rgba(200, 80, 192, 0.8);
+  }
+  100% {
+    transform: scale(1.6);
+    box-shadow: inset 0 0 1px 1px rgba(200, 80, 192, 0);
+  }
+}
+@-webkit-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .github-corner .octo-arm {
+    -webkit-animation: octocat-wave 560ms ease-in-out;
+            animation: octocat-wave 560ms ease-in-out;
+  }
+}
+@media (min-width: 600px) {
+  .desk__hotspot--toggle {
+    width: 30px;
+    height: 30px;
+  }
+  .desk__hotspot--content {
+    position: absolute;
+    width: 220px;
+    height: 240px;
+    padding: 1em;
+    overflow-y: visible;
+    line-height: 1.4;
+    border-radius: 0.25em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .desk__hotspot--content.placed-top, .desk__hotspot--content.placed-bottom {
+    left: 50%;
+    right: auto;
+    overflow-y: scroll;
+    transform: translateX(-50%);
+  }
+  .desk__hotspot--content.placed-left, .desk__hotspot--content.placed-right {
+    overflow-y: scroll;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+  .desk__hotspot--content.placed-top {
+    bottom: 160%;
+    top: auto;
+  }
+  .desk__hotspot--content.placed-bottom {
+    top: 160%;
+    bottom: auto;
+  }
+  .desk__hotspot--content.placed-left {
+    right: 160%;
+    left: auto;
+  }
+  .desk__hotspot--content.placed-right {
+    left: 160%;
+    right: auto;
+  }
+  .desk__hotspot--content-title {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #000000;
+  }
+  .desk__hotspot--content-body {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+    margin-top: 10px;
+    color: #000000;
+  }
+  .desk__hotspot.open .desk__hotspot--content {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+    transition-timing-function: cubic-bezier(0.6, -0.05, 0.01, 0.99);
+  }
+  .desk__hotspot.open .desk__hotspot--content.placed-top {
+    bottom: 140%;
+    transform: translateX(-50%) scale(1);
+  }
+  .desk__hotspot.open .desk__hotspot--content.placed-bottom {
+    top: 140%;
+    transform: translateX(-50%) scale(1);
+  }
+  .desk__hotspot.open .desk__hotspot--content.placed-left {
+    right: 140%;
+    transform: translateY(-50%) scale(1);
+  }
+  .desk__hotspot.open .desk__hotspot--content.placed-right {
+    left: 140%;
+    transform: translateY(-50%) scale(1);
+  }
+  .desk__hotspot--closingIcon {
+    display: none;
+  }
+}
