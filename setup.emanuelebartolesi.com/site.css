@@ -226,6 +226,31 @@ body {
   left: 80%;
 }
 
+.desk__hotspot:nth-of-type(15) {
+  top: 75%;
+  left: 70%;
+}
+
+.desk__hotspot:nth-of-type(16) {
+  top: 75%;
+  left: 80%;
+}
+
+.desk__hotspot:nth-of-type(17) {
+  top: 85%;
+  left: 20%;
+}
+
+.desk__hotspot:nth-of-type(18) {
+  top: 80%;
+  left: 60%;
+}
+
+.desk__hotspot:nth-of-type(19) {
+  top: 54%;
+  left: 53%;
+}
+
 .credits {
   display: flex;
   align-items: center;
