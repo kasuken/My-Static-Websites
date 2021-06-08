@@ -16,9 +16,10 @@ body {
 .desk-img__wrp {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   border-radius: 20px;
+  margin-top: 20px;
   box-shadow: 5px 10px 35px 5px rgba(0, 0, 0, 0.5);
 }
 .desk-img__wrp .desk-img {
@@ -156,40 +157,73 @@ body {
           animation: setup-pulse 2s infinite;
 }
 .desk__hotspot:nth-of-type(1) {
-  top: 30%;
-  left: 56%;
+  top: 75%;
+  left: 15%;
 }
+
 .desk__hotspot:nth-of-type(2) {
-  top: 54%;
-  left: 9%;
+  top: 60%;
+  left: 15%;
 }
+
 .desk__hotspot:nth-of-type(3) {
-  top: 40%;
-  left: 76%;
+  top: 60%;
+  left: 30%;
 }
+
 .desk__hotspot:nth-of-type(4) {
-  top: 21%;
-  left: 29%;
+  top: 40%;
+  left: 30%;
 }
+
 .desk__hotspot:nth-of-type(5) {
-  top: 68%;
-  left: 29%;
+  top: 55%;
+  left: 45%;
 }
+
 .desk__hotspot:nth-of-type(6) {
-  top: 50%;
-  left: 34%;
+  top: 65%;
+  left: 45%;
 }
+
 .desk__hotspot:nth-of-type(7) {
-  top: 16%;
-  left: 10%;
+  top: 70%;
+  left: 30%;
 }
+
 .desk__hotspot:nth-of-type(8) {
-  top: 34%;
-  left: 16%;
+  top: 58%;
+  left: 60%;
 }
+
 .desk__hotspot:nth-of-type(9) {
-  top: 52%;
-  left: 47%;
+  top: 45%;
+  left: 80%;
+}
+
+.desk__hotspot:nth-of-type(10) {
+  top: 32%;
+  left: 95%;
+}
+
+.desk__hotspot:nth-of-type(11) {
+  top: 27%;
+  left: 42%;
+}
+
+.desk__hotspot:nth-of-type(12) {
+  top: 27%;
+  left: 32%;
+}
+
+.desk__hotspot:nth-of-type(13) {
+  top: 25%;
+  left: 50%;
+}
+
+.desk__hotspot:nth-of-type(14) {
+  top: 25%;
+  left: 80%;
 }
 
 .credits {
