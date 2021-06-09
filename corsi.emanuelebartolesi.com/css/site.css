@@ -57,9 +57,10 @@ body {
   margin-top: 10px;
 }
 .feature__content--subtitle {
-    font-family: "Lora", sans-serif;
     font-size: 24px;
-  }
+    margin: 0;
+    margin-bottom: 18px;
+}
 .feature__content--body {
   font-family: "Merriweather", sans-serif;
   font-size: 14px;
