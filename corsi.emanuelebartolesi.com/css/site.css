@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Merriweather&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", sans-serif;
+  background-color: #2b4ec2;
+  background-image: linear-gradient(62deg, #2b4ec2 0%, #49329c 100%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.features__wrp {
+  position: relative;
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.feature {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.feature:first-child {
+  margin-top: 5vh;
+}
+.feature:not(:first-child) {
+  margin-top: 10vh;
+}
+.feature:last-child {
+  margin-bottom: 10vh;
+}
+.feature img {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  border-radius: 15px;
+}
+.feature__wrp--left, .feature__wrp--right {
+  width: 100%;
+}
+.feature__content--title {
+  font-family: "Lora", sans-serif;
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 0;
+  margin-top: 10px;
+}
+.feature__content--body {
+  font-family: "Merriweather", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  margin-top: 10px;
+}
+.feature__content--cta {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  margin-top: 2rem;
+  border-radius: 15px;
+  background-color: #FBAB7E;
+  padding: 0.8rem 2rem;
+  font-size: 14px;
+  line-height: 1;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.6, -0.05, 0.01, 0.99);
+  will-change: transform;
+}
+.feature__content--cta:after {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.6, -0.05, 0.01, 0.99);
+}
+.feature__content--cta:hover {
+  background-color: #fa9b65;
+  transform: scale(1.1);
+}
+.feature__content--cta:hover:after {
+  opacity: 1;
+}
+
+.credits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 0;
+  font-family: "Merriweather", sans-serif;
+  font-size: 15px;
+}
+.credits__link {
+  color: inherit;
+  font-weight: bold;
+}
+.credits__avatar {
+  display: inline-block;
+  max-width: 30px;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.github-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(-1, 1);
+  border: 0;
+  fill: #F7CE68;
+  color: #ffffff;
+}
+.github-corner:hover .octo-arm {
+  -webkit-animation: octocat-wave 560ms ease-in-out;
+          animation: octocat-wave 560ms ease-in-out;
+}
+
+@-webkit-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .github-corner .octo-arm {
+    -webkit-animation: octocat-wave 560ms ease-in-out;
+            animation: octocat-wave 560ms ease-in-out;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__wrp {
+    max-width: 60vw;
+  }
+
+  .feature__content--title {
+    font-size: 28px;
+  }
+  .feature__content--body, .feature__content--cta {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .features__wrp {
+    max-width: 990px;
+  }
+
+  .feature {
+    flex-direction: row;
+  }
+  .feature.reverse {
+    flex-direction: row-reverse;
+  }
+  .feature.reverse .feature__wrp--right {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    -webkit-padding-end: 5vw;
+            padding-inline-end: 5vw;
+  }
+  .feature__wrp--left, .feature__wrp--right {
+    width: 50%;
+  }
+  .feature__wrp--right {
+    -webkit-padding-start: 5vw;
+            padding-inline-start: 5vw;
+  }
+  .feature__content--title {
+    font-size: 38px;
+    margin-top: 0;
+  }
+  .feature__content--body, .feature__content--cta {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .features__wrp {
+    max-width: 1200px;
+  }
+
+  .feature__content--title {
+    font-size: 44px;
+  }
+  .feature__content--body, .feature__content--cta {
+    font-size: 18px;
+  }
+}
