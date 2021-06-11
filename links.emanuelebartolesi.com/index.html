@@ -4,19 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
     <title>Emanuele Bartolesi</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
   </head>
   <body>
@@ -24,19 +19,19 @@
       <div class="container">
         <div class="box">
           <div class="columns is-centered">
-            <div class="column is-3" style="text-align: center">
+            <div class="column is-3 has-text-centered">
               <figure class="image is-256x256 logo">
                 <img class="is-rounded" src="./images/logo.png" />
               </figure>
             </div>
           </div>
           <div class="columns is-centered">
-            <div class="column is-8" style="text-align: center">
+            <div class="column is-8 has-text-centered">
               <h3 class="title is-3 header">Emanuele Bartolesi</h3>
             </div>
           </div>
           <div class="columns is-centered">
-            <div class="column is-10" style="text-align: center">
+            <div class="column is-10 has-text-centered">
               <a
                 class="button is-medium is-twitter"
                 href="https://www.emanuelebartolesi.com"
@@ -113,30 +108,25 @@
           </div>
         </div>
 
-        <div class="box boxsmall">
-          <div class="columns">
-            <div class="column is-2">
-              <figure class="image">
-                <a
-                  href="https://tidalwaveacademy.teachable.com/"
-                  target="_blank"
-                >
-                  <img class="academylogo" src="./images/LogoRect.png" />
-                </a>
-              </figure>
-            </div>
-            <div class="column">
-              <p class="title">
-                ASP.NET Core, TypeScript and Microsoft 365 Academy
-              </p>
-            </div>
+        <a class="box boxsmall" href="https://tidalwaveacademy.teachable.com/" target="_blank">
+          <div class="columns is-marginless">
+              <div class="column is-2">
+                <figure class="image">
+                    <img class="academylogo" src="./images/LogoRect.png" />
+                </figure>
+              </div>
+              <div class="column">
+                <p class="title">
+                  ASP.NET Core, TypeScript and Microsoft 365 Academy
+                </p>
+              </div>
           </div>
-        </div>
+        </a>
 
         <div class="box boxyoutube">
           <iframe
             width="100%"
-            height="90%"
+            height="360px"
             src="https://www.youtube-nocookie.com/embed/Pp_S_Df7-6Q?start=150&autoplay=1&mute=1"
             title="Emanuele Bartolesi YouTube"
             frameborder="0"
@@ -144,38 +134,28 @@
             autoplay="1"
             allowfullscreen
           ></iframe>
-          <div style="text-align: center; padding: 0; margin-top: -20px;">my youtube channel</div>
-        </div>
-
-        <div class="box boxsetup">
-          Setup Details
-          <a href="https://setup.emanuelebartolesi.com/"><p class="subtitle">setup.emanuelebartolesi.com</p></a>
-        </div>
-
-        <div class="columns">
-          <div class="column">
-            <div class="box boxdoubleleft">
-                <p>My Twitch Channel</p>
-                <p class="subtitle">
-                  <a
-                    href="https://twitch.tv/kasuken"
-                    target="_blank"
-                    >twitch.tv/kasuken</a
-                  >
-                </p>
-            </div>
+          <div class="description">
+            <a href="youtube.com/channel/UCU67JYtJURWRTx7vrdx9APg" target="_blank">my youtube channel</a>
           </div>
-          <div class="column">
-            <div class="box boxdoubleright">
+        </div>
+
+        <a class="box boxsetup" href="https://setup.emanuelebartolesi.com/" target="_blank">
+          <p>Setup Details</p>
+          <p class="subtitle">setup.emanuelebartolesi.com</p>
+        </a>
+
+        <div class="columns is-desktop sidebox__wrp">
+          <div class="column is-half-desktop">
+            <a class="box sidebox boxdoubleleft" href="https://twitch.tv/kasuken" target="_blank">
+              <p>My Twitch Channel</p>
+              <p class="subtitle">twitch.tv/kasuken</p>
+            </a>
+          </div>
+          <div class="column is-half-desktop">
+            <a class="box sidebox boxdoubleright" href="https://marketplace.visualstudio.com/publishers/emanuelebartolesi" target="_blank">
               <p>Visual Studio Code Extensions</p>
-              <p class="subtitle">
-                <a
-                  href="https://marketplace.visualstudio.com/publishers/emanuelebartolesi"
-                  target="_blank"
-                  >checkout my extensions</a
-                >
-              </p>
-            </div>
+              <p class="subtitle">checkout my extensions</p>
+            </a>
           </div>
         </div>
       </div>

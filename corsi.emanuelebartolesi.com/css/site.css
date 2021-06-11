@@ -57,9 +57,9 @@ body {
   margin-top: 10px;
 }
 .feature__content--subtitle {
-    font-size: 24px;
-    margin: 0;
-    margin-bottom: 18px;
+  font-size: 16px;
+  margin: 5px 0;
+  margin-bottom: 15px;
 }
 .feature__content--body {
   font-family: "Merriweather", sans-serif;
@@ -173,6 +173,9 @@ body {
   .feature__content--title {
     font-size: 28px;
   }
+  .feature__content--subtitle {
+    font-size: 18px;
+  }
   .feature__content--body, .feature__content--cta {
     font-size: 15px;
   }
@@ -205,6 +208,9 @@ body {
     font-size: 38px;
     margin-top: 0;
   }
+  .feature__content--subtitle {
+    font-size: 22px;
+  }
   .feature__content--body, .feature__content--cta {
     font-size: 16px;
   }
@@ -216,6 +222,9 @@ body {
 
   .feature__content--title {
     font-size: 44px;
+  }
+  .feature__content--subtitle {
+    font-size: 24px;
   }
   .feature__content--body, .feature__content--cta {
     font-size: 18px;
