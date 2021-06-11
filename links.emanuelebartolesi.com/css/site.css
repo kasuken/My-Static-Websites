@@ -16,27 +16,58 @@ a:hover {
   color: white;
 }
 
-.box {
-  background: rgb(22, 22, 26);
-  color: white;
-  width: 650px;
-  margin-right: auto;
-  margin-left: auto;
-  height: 300px;
-  font-size: 36px;
-  font-weight: 800;
+a.box:focus, a.box:hover {
+  box-shadow: none;
 }
 
-.boxyoutube {
-  height: 360px;
+.container>.box {
+  height: auto;
+}
+.container>.box .image img {
+  width: 100%;
+  max-width: 135px;
+  margin: 0 auto;
+}
+
+.wrapper__link {
+  display: flex;
+}
+
+.box {
+  position: relative;
+  background: rgb(22, 22, 26);
+  color: white;
+  width: 100%;
+  max-width: 650px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  font-size: 36px;
+  font-weight: 800;
+  transition: all 0.2s ease-in-out;
+}
+
+.box .button {
+  transition: transform 0.2s ease-out;
+}
+.box .button:hover {
+  transform: translateY(-4px);
+}
+
+.boxyoutube .description{
+  text-align: center;
+  padding: 0;
+  line-height: 1.2;
+}
+.boxyoutube .description a {
+  color: white;
+}
+.boxyoutube .description a:hover {
+  color: rgb(44, 182, 125);;
 }
 
 .header {
   color: white !important;
-}
-
-.boxsmall {
-  height: 80px;
 }
 
 .boxsmall .column {
@@ -47,24 +78,30 @@ a:hover {
   color: white;
   font-size: 26px;
   vertical-align: bottom;
+  margin-top: 10px;
+  text-align: center;
 }
 
-.boxdoubleleft {
+.sidebox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   height: 200px;
-  float: right;
-  width: 315px;
+  width: 100%;
   font-size: 34px;
   line-height: 36px;
-  background-image: url('/images/twitch.png');
-  background-size: cover;
-  background-repeat: no-repeat;
   color: #242629;
 }
 
+.boxdoubleleft {
+  background-image: url('/images/twitch.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .boxdoubleleft > .subtitle {
-  margin-top: 78px;
   text-align: left;
-  color: rgb(22, 22, 26);
+  color: white;
 }
 
 .boxdoubleleft p {
@@ -75,24 +112,15 @@ a:hover {
   color: white;
 }
 
-.boxdoubleleft  a:hover {
-  color: rgb(22, 22, 26);
+.boxdoubleleft:hover p {
+  color: rgb(44, 182, 125);
 }
 
 .boxdoubleright {
-  height: 200px;
-  margin-right: 0;
-  margin-left: 0;
-  width: 315px;
-  font-size: 42px;
-  font-weight: 800;
   background: rgb(44, 182, 125);
-  line-height: 36px;
-  color: #242629;
 }
 
 .boxdoubleright > .subtitle {
-  margin-top: 40px;
   color: rgb(22, 22, 26);
 }
 
@@ -100,20 +128,28 @@ a:hover {
   color: rgb(22, 22, 26);
 }
 
-.boxdoubleright  a:hover {
+.boxdoubleright:hover p {
   color: white;
 }
 
 .boxsetup {
-    background: url('/images/studio.jpeg');
-    background-repeat: no-repeat;
-    background-position: left; 
-    background-attachment: local;
+  background: url('/images/studio.jpeg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-attachment: local;
+}
+
+.boxsetup p {
+  color: white;
 }
 
 .boxsetup .subtitle {
-    margin-top: 190px;
-    color: rgb(148, 161, 178);
+  margin-top: 190px;
+  color: rgb(148, 161, 178);
+}
+
+.boxsetup:hover p {
+  color: white;
 }
 
 .footer {
@@ -125,4 +161,23 @@ a:hover {
 .academylogo {
   height: 65px !important;
   width: auto !important;
+}
+
+@media screen and (min-width: 768px) {
+  .boxsmall .column {
+    display: flex;
+    align-items: center;
+  }
+  .boxsmall .title {
+    margin-top: 0;
+    margin-left: 10px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebox__wrp {
+    max-width: 670px;
+    margin: 0 auto;
+  }
 }
