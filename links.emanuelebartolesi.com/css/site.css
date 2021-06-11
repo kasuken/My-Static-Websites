@@ -90,7 +90,7 @@ a.box:focus, a.box:hover {
   width: 100%;
   font-size: 34px;
   line-height: 36px;
-  color: #242629;
+  color: #242629 !important;
 }
 
 .boxdoubleleft {
