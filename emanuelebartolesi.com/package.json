@@ -1,0 +1,23 @@
+{
+  "name": "emanuele-bartolesi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Emanuele Bartolesi",
+  "author": "Emanuele Bartolesi",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@wkocjan/gatsby-theme-intro": "^2.0.1",
+    "gatsby": "^3.12.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
