@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    description: "Emanuele Bartolesi - Microsoft 365 Architect & CTO for Early Stage Startups",
+    description: "Emanuele Bartolesi - Microsoft 365 Architect",
     locale: "en",
     title: "Emanuele Bartolesi",
     showThemeLogo: false,
-    formspreeEndpoint: "https://formspree.io/f/xleaadly",
+    formspreeEndpoint: "https://formspree.io/f/xleaadly"
   },
   plugins: [
     {
@@ -12,9 +12,8 @@ module.exports = {
       options: {
         basePath: "/",
         contentPath: "content/",
-        showThemeLogo: false,
-        theme: "classic",
-      },
-    },
-  ],
+        theme: "gh-inspired"
+      }
+    }
+  ]
 };

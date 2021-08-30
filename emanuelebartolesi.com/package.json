@@ -1,19 +1,8 @@
 {
-  "name": "emanuele-bartolesi",
+  "name": "intro",
   "version": "1.0.0",
-  "private": true,
-  "description": "Emanuele Bartolesi",
-  "author": "Emanuele Bartolesi",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
+  "main": "index.js",
+  "license": "MIT",
   "dependencies": {
     "@wkocjan/gatsby-theme-intro": "^2.0.1",
     "gatsby": "^3.12.1",

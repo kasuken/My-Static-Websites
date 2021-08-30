@@ -1,18 +1,32 @@
-- name: Example 1
-  url: https://github.com
+- name: Live on Twitch
+  url: https://twitch.tv/kasuken
   description: Override the digital divide with additional clickthroughs from DevOps. User generated content in real-time will have multiple touchpoints for offshoring.
-  status: in progress
+  status: live
   tags:
-    - JavaScript
-    - Gatsby
-  icon: github
+    - Twitch
+    - Live
+    - Live Coding
+    - Learn
+  icon: twitch
+  image: images/project.jpg
 
-- name: Example 2
-  url: https://github.com
+- name: YouTube Channel
+  url: https://youtube.com/channel/UCU67JYtJURWRTx7vrdx9APg
   description: Leverage agile frameworks to provide a robust synopsis for high level overviews.
   status: live
   tags:
-    - JavaScript
-    - HTML
+    - Productivity
+    - Video
+    - Tutorial
+  icon: website
+  image: images/project.jpg
+
+- name: Discord
+  url: https://discord.org
+  description: Leverage agile frameworks to provide a robust synopsis for high level overviews.
+  status: live
+  tags:
+    - Community
+    - Entertainment
   icon: website
   image: images/project.jpg
