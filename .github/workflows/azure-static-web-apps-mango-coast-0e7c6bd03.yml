@@ -3,7 +3,7 @@ name: emanuelebartolesi.com
 on:
   push:
     paths:
-    - 'emanuelebartolesi.com/*'
+      - 'emanuelebartolesi.com/*'
     branches:
       - main
   pull_request:
