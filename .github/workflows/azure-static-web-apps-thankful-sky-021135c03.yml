@@ -2,6 +2,8 @@ name: setup.emanuelebartolesi.com
 
 on:
   push:
+    paths:
+    - 'setup.emanuelebartolesi.com'   
     branches:
       - main
   pull_request:

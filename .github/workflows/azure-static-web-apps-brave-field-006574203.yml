@@ -2,6 +2,8 @@ name: ask.emanuelebartolesi.com
 
 on:
   push:
+    paths:
+    - 'ask.emanuelebartolesi.com'   
     branches:
       - main
   pull_request:

@@ -2,6 +2,8 @@ name: live.emanuelebartolesi.com
 
 on:
   push:
+    paths:
+    - 'live.emanuelebartolesi.com'   
     branches:
       - main
   pull_request:
