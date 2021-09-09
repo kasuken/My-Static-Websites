@@ -9,4 +9,4 @@ cta:
   ctaLink: /about
 ---
 
-He is a software architect, a seasoned speaker, blogger and a live coder on Twitch, based in the middle of nowhere close to Zurich. Working as Microsoft 365 Architect at SoftwareONE.
+He is a software architect, a seasoned speaker, blogger and a live coder on Twitch, based in the middle of nowhere close to Zurich. <br /> Working as Microsoft 365 Architect at SoftwareONE.

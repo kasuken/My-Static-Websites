@@ -5,8 +5,8 @@
     "titleTemplate": "%s",
     "description": "My personal and blog site. Built with Gatsby. Made with ❤ by Emanuele Bartolesi",
     "siteUrl": "https://www.emanuelebartolesi.com",
-    "image": "/assets/stackrole.png",
-    "iconimage": "/assets/stackrole.png",
+    "image": "/assets/KasukenBlogLogo.png",
+    "iconimage": "/assets/KasukenBlogLogo.png",
     "twitterUsername": "@kasuken"
   },
   "ga": "UA-XXXXXXXXX-X"

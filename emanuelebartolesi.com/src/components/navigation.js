@@ -10,14 +10,14 @@ const MenuItems = [
     path: "/",
     title: "Home",
   },
-  {
-    path: "/twitch",
-    title: "Twitch",
-  },
-  {
-    path: "/speaking",
-    title: "Speaking",
-  },
+  // {
+  //   path: "/twitch",
+  //   title: "Twitch",
+  // },
+  // {
+  //   path: "/speaking",
+  //   title: "Speaking",
+  // },
   {
     path: "/about",
     title: "About",
