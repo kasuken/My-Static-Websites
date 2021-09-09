@@ -3,7 +3,7 @@ name: beamlab.ch
 on:
   push:
     paths:
-    - 'beamlab.ch'  
+      ['beamlab.ch/**']  
     branches:
       - main
   pull_request:
