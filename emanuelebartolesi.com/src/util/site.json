@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "title": "Emanuele Bartolesi",
+    "initial": "EB",
+    "titleTemplate": "%s",
+    "description": "My personal and blog site. Built with Gatsby. Made with ❤ by Emanuele Bartolesi",
+    "siteUrl": "https://www.emanuelebartolesi.com",
+    "image": "/assets/stackrole.png",
+    "iconimage": "/assets/stackrole.png",
+    "twitterUsername": "@kasuken"
+  },
+  "ga": "UA-XXXXXXXXX-X"
+}

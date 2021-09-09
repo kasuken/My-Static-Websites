@@ -1,0 +1,24 @@
+{
+  "socialIcons": [
+    {
+      "icon": "instagram",
+      "url": "https://www.instagram.com/kasuken/"
+    },
+    {
+      "icon": "linkedin",
+      "url": "https://linkedin.com/in/bartolesiemanuele"
+    },
+    {
+      "icon": "youtube",
+      "url": "https://www.youtube.com/channel/UCc1hYgIP_DzFMMzwLRcbDVQ"
+    },
+    {
+      "icon": "twitch",
+      "url": "https://twitch.tv/kasuken"
+    },
+    {
+      "icon": "github",
+      "url": "https://github.com/kasuken"
+    }
+  ]
+}
