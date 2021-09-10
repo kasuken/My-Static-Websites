@@ -2,8 +2,8 @@
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { RiArrowRightSLine } from "react-icons/ri"
 import {
+  RiArrowRightSLine,
   RiFacebookBoxFill,
   RiTwitterFill,
   RiLinkedinBoxFill,
@@ -20,7 +20,7 @@ import {
   RiBehanceFill,
   RiTwitchFill
 } from "react-icons/ri"
-import { FaWordpress, FaVk } from "react-icons/fa"
+import { FaWordpress, FaVk, FaKeybase } from "react-icons/fa"
 
 import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
@@ -195,6 +195,13 @@ const HomePage = ({ data }) => {
         {icons.icon === "vk" ? (
           <Link to={icons.url} target="_blank">
             <FaVk />
+          </Link>
+        ) : (
+          ""
+        )}
+        {icons.icon === "keybase" ? (
+          <Link to={icons.url} target="_blank">
+            <FaKeybase />
           </Link>
         ) : (
           ""

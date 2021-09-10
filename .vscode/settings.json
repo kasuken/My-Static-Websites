@@ -1,0 +1,21 @@
+{
+    "frontMatter.preview.host": "http://localhost:8000/",
+    "frontMatter.content.folders": [
+        {
+            "title": "pages",
+            "fsPath": "d:\\_GITHUB_\\My-Static-Websites\\emanuelebartolesi.com\\src\\content\\pages",
+            "paths": [
+                "d:\\_GITHUB_\\My-Static-Websites\\emanuelebartolesi.com\\src\\content\\pages"
+            ]
+        },
+        {
+            "title": "posts",
+            "fsPath": "d:\\_GITHUB_\\My-Static-Websites\\emanuelebartolesi.com\\src\\content\\posts",
+            "paths": [
+                "d:\\_GITHUB_\\My-Static-Websites\\emanuelebartolesi.com\\src\\content\\posts"
+            ]
+        }
+    ],
+    "frontMatter.content.autoUpdateDate": false,
+    "frontMatter.content.fmHighlight": true
+}
