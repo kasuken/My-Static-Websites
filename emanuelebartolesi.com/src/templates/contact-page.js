@@ -40,7 +40,10 @@ const Contact = ({ data }) => {
           className="description"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        <form
+        <br />
+        You can also subscribe to my newsletter by filling out the form below (it's only in italian, at the moment)
+        <iframe src="https://emanuelebartolesi.substack.com/embed" width="100%" height="320"  frameborder="0" scrolling="no"></iframe>
+        {/* <form
           className="contact-form"
           action="/thanks"
           name="contact"
@@ -86,7 +89,7 @@ const Contact = ({ data }) => {
               </span>
             </button>
           </p>
-        </form>
+        </form> */}
       </div>
     </Layout>
   )
