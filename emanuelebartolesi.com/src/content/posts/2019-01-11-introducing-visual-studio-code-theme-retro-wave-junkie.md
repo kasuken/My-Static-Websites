@@ -3,8 +3,8 @@ template: blog-post
 title: Introducing a new Visual Studio Code Theme Retro Wave Junkie
 slug: introducing-visual-studio-code-theme-retro-wave-junkie
 date: '2019-01-11T12:30:07.391Z'
-description: 
-featuredImage: /assets/archive/RetroWaveJunkieMainScreen.jpg
+description: Introducing a new Visual Studio Code Theme Retro Wave Junkie
+featuredImage: /assets/archive/RetroWaveJunkieMainScreen.png
 ---
 
 My editor choice is Visual Studio Code since the first beta release.

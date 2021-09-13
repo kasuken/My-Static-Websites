@@ -3,7 +3,7 @@ template: blog-post
 title: Top 5 themes for Visual Studio Code
 slug: top-5-themes-for-visual-studio-code
 date: '2019-01-11T12:30:07.391Z'
-description: 
+description: Top 5 themes for Visual Studio Code
 featuredImage: /assets/2021/markus-spiske-8OyKWQgBsKQ-unsplash.jpg
 ---
 
