@@ -214,6 +214,7 @@
 @media (max-width: $breakpoint-sm) {
   .post-card .featured-image {
     min-height: 300px;
+    width: 100%;
   }
 }
 article figure {

@@ -5,7 +5,7 @@ title: About Me
 lastmod: '2021-09-10T09:55:39.878Z'
 ---
 
-<center><img src="/assets/youtube.gif" width="100%" /></center>
+<center><img src="/assets/ema.jpg" width="100%" style="border-radius:12px" /></center>
 
 I'm a **Microsoft 365 Architect** but I was born as a Full Stack Web Developer.
 

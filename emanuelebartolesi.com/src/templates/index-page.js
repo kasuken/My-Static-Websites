@@ -212,7 +212,7 @@ const HomePage = ({ data }) => {
   return (
     <Layout>
       <Seo />
-      <div className="home-banner grids col-1 sm-2">
+      <div className="home-banner grids col-1 sm-2" style={{placeItems:'normal'}}>
         <div>
           <h1 className="title">{frontmatter.title}</h1>
           <p
@@ -249,7 +249,7 @@ const HomePage = ({ data }) => {
           </div>
         </div>
         <div>
-          {Image ? (
+          {/* {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
@@ -257,7 +257,8 @@ const HomePage = ({ data }) => {
             />
           ) : (
             ""
-          )}
+          )} */}
+          <img src="/assets/youtube.gif" style={{width:'100%'}} alt={frontmatter.title + " - Featured image"} className="featured-image" />
         </div>
       </div>
       <BlogListHome data={posts} />
