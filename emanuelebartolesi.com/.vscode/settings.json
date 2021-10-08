@@ -15,8 +15,8 @@
   ],
   "frontMatter.content.pageFolders": [
     {
-      "title": "posts",
-      "path": "[[workspace]]/src/content/posts"
+      "title": "content",
+      "path": "d:/_GITHUB_/My-Static-Websites/emanuelebartolesi.com/src/content"
     }
   ]
 }
