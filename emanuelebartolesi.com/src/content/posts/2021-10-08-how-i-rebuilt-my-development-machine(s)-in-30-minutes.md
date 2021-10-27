@@ -36,12 +36,12 @@ After less than 1 minute, you have BoxStarter installed on your machine.
 You can also install BoxStarter directly from the web with this PowerShell Script.
 PowerShell is included on Windows 11 with the awesome Windows Terminal.
 
-````
+```
   Set-ExecutionPolicy Bypass -Scope Process -Force;
   [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
   iex ((New-Object System.Net.WebClient).DownloadString('https://boxstarter.org/bootstrapper.ps1'));
   Get-Boxstarter -Force
-````
+```
 
 # Create a package for BoxStarter and how to use it
 To create a BoxStarter is really easy and quick.
@@ -61,9 +61,9 @@ You can choose the extension that you prefer. I use very often the extension ".p
 
 Now you can open a terminal on your machine and launch the command below:
 
-````
+```
 Install-BoxstarterPackage -PackageName https://gist.github.com/mwrock/7382880/raw/f6525387b4b524b8eccef6ed4d5ec219c82c0ac7/gistfile1.txt -DisableReboots
-````
+```
 
 # Conclusion
 
