@@ -3,7 +3,6 @@
   "editor.tabSize": 2,
   "html.format.wrapLineLength": 80,
   "editor.wordWrap": "on",
-  "frontMatter.preview.host": "http://localhost:8000/",
   "frontMatter.content.folders": [
     {
       "title": "posts",
@@ -11,12 +10,6 @@
       "paths": [
         "d:\\_GITHUB_\\My-Static-Websites\\emanuelebartolesi.com\\src\\content\\posts"
       ]
-    }
-  ],
-  "frontMatter.content.pageFolders": [
-    {
-      "title": "content",
-      "path": "d:/_GITHUB_/My-Static-Websites/emanuelebartolesi.com/src/content"
     }
   ]
 }

@@ -23,7 +23,9 @@ main {
 a {
   color: var(--home-link-color);
   text-decoration: none;
+  font-weight: bold;
   &:hover {
     color: var(--home-link-hover-color);
+    text-decoration: dotted underline;
   }
 }
