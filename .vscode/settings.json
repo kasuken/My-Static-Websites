@@ -1,5 +1,4 @@
 {
-    "frontMatter.preview.host": "http://localhost:8000/",
     "frontMatter.content.folders": [
         {
             "title": "pages",
@@ -14,18 +13,6 @@
             "paths": [
                 "d:\\_GITHUB_\\My-Static-Websites\\emanuelebartolesi.com\\src\\content\\posts"
             ]
-        }
-    ],
-    "frontMatter.content.autoUpdateDate": false,
-    "frontMatter.content.fmHighlight": true,
-    "frontMatter.content.pageFolders": [
-        {
-            "title": "pages",
-            "path": "[[workspace]]/emanuelebartolesi.com/src/content/pages"
-        },
-        {
-            "title": "posts",
-            "path": "[[workspace]]/emanuelebartolesi.com/src/content/posts"
         }
     ]
 }

@@ -1,3 +1,16 @@
 {
-  "$schema": "https://frontmatter.codes/frontmatter.schema.json"
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.content.autoUpdateDate": false,
+  "frontMatter.content.fmHighlight": true,
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "pages",
+      "path": "[[workspace]]/emanuelebartolesi.com/src/content/pages"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/emanuelebartolesi.com/src/content/posts"
+    }
+  ],
+  "frontMatter.preview.host": "http://localhost:8000/"
 }
