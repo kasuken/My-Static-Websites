@@ -154,6 +154,27 @@ a.box:focus, a.box:hover {
   color: white;
 }
 
+.boxsessionize {
+  background: url('https://sessionize.com/image/ce6b-2000o500o2-BUAok3hPizQUSeSg9efE1X.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+
+.boxsessionize p {
+  color:rgb(44, 182, 125);
+}
+
+.boxsessionize .subtitle {
+  margin-top: 190px;
+  color: rgb(148, 161, 178);
+}
+
+.boxsessionize:hover p {
+  color: white;
+}
+
 .footer {
   background: rgb(22, 22, 26);
   padding: 1rem 1.5rem 1rem;
