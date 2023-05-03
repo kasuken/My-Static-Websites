@@ -90,7 +90,7 @@ a.box:focus, a.box:hover {
   width: 100%;
   font-size: 34px;
   line-height: 36px;
-  color: #242629 !important;
+  color: white !important;
 }
 
 .boxdoubleleft {
@@ -118,6 +118,7 @@ a.box:focus, a.box:hover {
 
 .boxdoubleright {
   background: rgb(44, 182, 125);
+  color: white;
 }
 
 .boxdoubleright > .subtitle {
@@ -129,14 +130,15 @@ a.box:focus, a.box:hover {
 }
 
 .boxdoubleright:hover p {
-  color: white;
+  color: rgb(22, 22, 26);
 }
 
 .boxsetup {
-  background: url('/images/studio.jpeg');
+  background: url('https://setup.emanuelebartolesi.com/img/IMG_4521.JPEG');
   background-repeat: no-repeat;
-  background-position: left;
-  background-attachment: local;
+  /* background-position: center; */
+  /* background-attachment: fixed; */
+  background-size: cover;
 }
 
 .boxsetup p {
