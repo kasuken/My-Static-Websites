@@ -1,7 +1,9 @@
-name: Azure Static Web Apps CI/CD
+name: books.emanuelebartolesi.com
 
 on:
   push:
+    paths:
+      ['books.emanuelebartolesi.com/**']   
     branches:
       - main
   pull_request:
