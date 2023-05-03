@@ -66,6 +66,10 @@ a.box:focus, a.box:hover {
   color: rgb(44, 182, 125);;
 }
 
+.mainbox {
+  background-color: royalblue;
+}
+
 .header {
   color: white !important;
 }
@@ -167,12 +171,28 @@ a.box:focus, a.box:hover {
 }
 
 .boxsessionize .subtitle {
-  margin-top: 190px;
+  margin-top: 60px;
   color: rgb(148, 161, 178);
 }
 
 .boxsessionize:hover p {
   color: white;
+}
+
+.spotifyplaylist {
+  background: url('/images/Retrowave\ -\ Best\ songs\ for\ developers.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.spotifyplaylist p {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 .footer {
