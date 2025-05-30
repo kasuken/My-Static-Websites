@@ -176,6 +176,10 @@ a.box:hover {
   background-size: cover;
 }
 
+.boxpresentations {
+  background-color: transparent;
+}
+
 .boxsessionize p {
   color: rgb(44, 182, 125);
 }
