@@ -1,146 +1,196 @@
-<!DOCTYPE html>
-<html lang="en" class="dark-mode">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Emanuele Bartolesi - Microsoft MVP, GitHub Star, developer, speaker, and content creator. Find all my links, courses, and profiles here." />
-  <meta property="og:title" content="Emanuele Bartolesi" />
-  <meta property="og:description" content="Microsoft MVP & GitHub Star. Find all my links, courses, and profiles here." />
-  <!-- <meta property="og:image" content="https://links.emanuelebartolesi.com/images/avatar.png" /> -->
-  <meta property="og:type" content="website" />
-  
-  <!-- <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" /> -->
-  <title>Emanuele Bartolesi | Links & Profiles</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="./css/site.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emanuele Bartolesi | Links</title>
+  <meta name="description" content="Find Emanuele Bartolesi's VS Code extensions, SaaS products, articles, courses, and the soundtrack to a good coding session.">
+  <link rel="canonical" href="https://links.emanuelebartolesi.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Emanuele Bartolesi | Links">
+  <meta property="og:description" content="My VS Code extensions, SaaS products, writing, and a little retrowave.">
+  <meta property="og:url" content="https://links.emanuelebartolesi.com/">
+  <meta property="og:image" content="https://links.emanuelebartolesi.com/images/link-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Emanuele Bartolesi, 12-time Microsoft MVP, 4-time GitHub Star, and GitHub Star of the Year 2023">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="./images/kasuken.svg" type="image/svg+xml">
+  <link rel="preload" href="./fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/site.css">
+  <script>
+    try {
+      if (localStorage.getItem('links-theme') === 'light') document.documentElement.dataset.theme = 'light';
+    } catch (error) {
+      console.warn('Saved theme could not be read.', error);
+    }
+  </script>
 </head>
-<body>
-  
-  <div class="spotlight"></div>
+<body id="top">
+  <svg xmlns="http://www.w3.org/2000/svg" class="symbols" aria-hidden="true">
+    <symbol id="out" viewBox="0 0 24 24"><path d="M6 18 18 6M7 6h11v11"/></symbol>
+    <symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="moon" viewBox="0 0 24 24"><path d="M20 15.3A8.5 8.5 0 0 1 8.7 4 8.5 8.5 0 1 0 20 15.3Z"/></symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z"/></symbol>
+    <symbol id="trophy" viewBox="0 0 24 24"><path d="M7 3h10v6a5 5 0 0 1-10 0V3Zm0 2H3v2a4 4 0 0 0 4 4m10-6h4v2a4 4 0 0 1-4 4m-5 3v6m-4 1h8"/></symbol>
+    <symbol id="mvp" viewBox="0 0 24 24"><path d="m12 2 10 10-10 10L2 12Z"/><path d="m7.5 13.5 2.6-4 2 3 2-3 2.4 4"/></symbol>
+    <symbol id="file" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2"/><circle cx="9" cy="9.5" r="1"/><path d="m4 17 5-4.5 3 2 3.5-4 5 5"/></symbol>
+    <symbol id="spark" viewBox="0 0 24 24"><path d="M12 2c0 6-4 10-10 10 6 0 10 4 10 10 0-6 4-10 10-10-6 0-10-4-10-10Z"/></symbol>
+    <symbol id="branch" viewBox="0 0 24 24"><circle cx="7" cy="5" r="2.5"/><circle cx="17" cy="7.5" r="2.5"/><circle cx="7" cy="19" r="2.5"/><path d="M7 7.5v9m0-2c6 0 10-.5 10-4.5"/></symbol>
+    <symbol id="blocks" viewBox="0 0 24 24"><path d="M3 10h11v11H3zM6.5 3H14v7M14 13.5h7.5V21H14M16 5l3-3 3 3-3 3Z"/></symbol>
+    <symbol id="course" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="14" rx="2"/><path d="m10 8 5 3.5-5 3.5ZM8 21h8"/></symbol>
+  </svg>
 
-  <nav class="top-nav">
-    <button class="theme-toggle" id="darkToggle" aria-label="Toggle light/dark mode">
-      <i class="fas fa-sun"></i>
-    </button>
-  </nav>
-
-  <main class="container">
-    
-    <header class="profile-header">
-      <div class="avatar-ring">
-        <img src="./images/avatar.png" alt="Emanuele Bartolesi avatar" class="avatar" loading="eager" onerror="this.src='https://github.com/emanuelebartolesi.png'" />
-      </div>
-      <h1 class="name">Emanuele Bartolesi</h1>
-      <h2 class="role">
-        Microsoft MVP <span class="dot">&bull;</span> GitHub Star <span class="stardrop"><i class="fas fa-star"></i></span>
-      </h2>
-      <p class="bio">Passionate software developer, speaker, and content creator.</p>
-    </header>
-
-    <div class="bento-grid">
-      <!-- Social links spanning full width -->
-      <div class="bento-card feature-socials col-span-full bento-interactive fade-in-up" style="animation-delay: 0.1s">
-        <div class="social-links">
-          <a href="https://github.com/kasuken" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://x.com/kasuken" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="https://bsky.app/profile/kasuken.bsky.social" target="_blank" aria-label="Bluesky"><i class="fab fa-bluesky"></i></a>          
-          <a href="https://www.linkedin.com/in/bartolesiemanuele/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
-
-      <!-- Main Link 1 -->
-      <a href="https://emanuelebartolesi.com" target="_blank" class="bento-card col-span-2 bento-interactive gradient-bg fade-in-up card-content" style="animation-delay: 0.2s">
-        <div class="card-header">
-          <span class="bento-tag blue-tag">Main Site</span>
-          <i class="fas fa-arrow-up-right-from-square external-icon"></i>
-        </div>
-        <div class="flex-row-between" style="flex: 1; margin-top: auto;">
-          <div class="text-left">
-            <h3>Personal Website & Blog</h3>
-            <p>Articles, talks, and projects.</p>
-          </div>
-          <i class="fas fa-arrow-right arrow-right"></i>
-        </div>
+  <a class="skip" href="#directory">Skip to links</a>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="wordmark" href="#top" aria-label="Kasuken links, back to top">
+        <img src="./images/kasuken.svg" width="32" height="32" alt="">
+        <strong>kasuken</strong><span class="slash">/</span><span>links</span>
       </a>
-
-      <!-- Secondary Link -->
-      <a href="https://github.com/kasuken" target="_blank" class="bento-card col-span-1 bento-interactive fade-in-up card-content flex-center" style="animation-delay: 0.3s">
-        <i class="fab fa-github giant-icon"></i>
-        <h3>GitHub</h3>
-        <p class="mono-text">/kasuken</p>
-      </a>
-
-      <!-- VS Code Extensions -->
-      <a href="https://marketplace.visualstudio.com/publishers/kasuken" target="_blank" class="bento-card col-span-1 bento-interactive fade-in-up card-content flex-center pattern-bg" style="animation-delay: 0.4s">
-        <i class="fas fa-puzzle-piece giant-icon" style="color: #007acc;"></i>
-        <h3>VS Code Extensions</h3>
-        <p>Marketplace</p>
-      </a>
-
-      <!-- LinkedIn Learning Courses -->
-      <a href="https://www.linkedin.com/learning/instructors/emanuele-bartolesi" target="_blank" class="bento-card col-span-2 bento-interactive fade-in-up card-content" style="background: rgba(10, 102, 194, 0.05); border-color: rgba(10, 102, 194, 0.1); animation-delay: 0.5s;">
-        <div class="card-header">
-          <span class="bento-tag" style="background: rgba(10, 102, 194, 0.15); color: #0a66c2; border: 1px solid rgba(10, 102, 194, 0.3);">Course Instructor</span>
-          <i class="fab fa-linkedin" style="font-size: 1.5rem; color: #0a66c2;"></i>
-        </div>
-        <div class="flex-row-between" style="flex: 1; margin-top: auto;">
-          <div class="text-left">
-            <h3>LinkedIn Learning</h3>
-            <p>Level up with my technical video courses.</p>
-          </div>
-          <i class="fas fa-arrow-right arrow-right"></i>
-        </div>
-      </a>
-
-      <!-- Spotify Playlist -->
-      <a href="https://open.spotify.com/playlist/7f3kE1C4yNOtQ4WjNkLdk2?si=y2yNp_K5QleiBPZuMSws9A" target="_blank" class="bento-card col-span-full bento-interactive fade-in-up card-content" style="background: rgba(29, 185, 84, 0.05); border-color: rgba(29, 185, 84, 0.1); animation-delay: 0.6s;">
-        <div class="flex-row-between" style="flex: 1; align-items: center;">
-          <div class="text-left" style="display: flex; align-items: center; gap: 1.2rem;">
-            <i class="fab fa-spotify" style="font-size: 2.5rem; color: #1DB954;"></i>
-            <div>
-              <h3>Music for Developers</h3>
-              <p>My curated Spotify playlist to help you focus.</p>
-            </div>
-          </div>
-          <i class="fas fa-arrow-right arrow-right"></i>
-        </div>
-      </a>
-
+      <nav class="navigation" aria-label="Page navigation">
+        <a href="#extensions">Extensions</a>
+        <a href="#saas">My SaaS</a>
+        <a href="#elsewhere">Socials</a>
+        <button id="theme" type="button" hidden aria-label="Light theme" aria-pressed="false" title="Toggle light theme">
+          <svg class="icon sun" aria-hidden="true"><use href="#sun"/></svg>
+          <svg class="icon moon" aria-hidden="true"><use href="#moon"/></svg>
+        </button>
+      </nav>
     </div>
+  </header>
 
-    <footer class="bottom-footer fade-in-up" style="animation-delay: 0.7s">
-      <p>&copy; <span id="year"></span> Emanuele Bartolesi. Crafted with <i class="fas fa-heart" style="color: #ef4444;"></i></p>
-    </footer>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="name">
+      <div class="intro">
+        <p class="greeting">Hey, I'm</p>
+        <h1 id="name">Emanuele <span>Bartolesi</span></h1>
+      </div>
+      <div class="about">
+        <p>I build VS Code extensions and SaaS products. I also write, teach, and speak about what I learn along the way.</p>
+        <ul class="credentials" aria-label="Recognition">
+          <li><svg class="icon" aria-hidden="true"><use href="#mvp"/></svg>Microsoft MVP &times; 12</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#star"/></svg>GitHub Star &times; 4</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#trophy"/></svg>GitHub Star of the Year 2023</li>
+        </ul>
+      </div>
+      <div class="artboard" aria-hidden="true">
+        <div class="portrait-sheet">
+          <div class="print">
+            <div class="orbits"></div>
+            <img src="./images/portrait.webp" width="680" height="680" alt="" fetchpriority="high">
+          </div>
+          <div class="file-tab"><svg class="icon"><use href="#file"/></svg>kasuken.png<span class="swatches"></span></div>
+        </div>
+        <span class="code-sticker">&lt;/&gt;</span>
+      </div>
+    </section>
 
+    <section id="directory" aria-labelledby="directory-title">
+      <h2 class="section-title" id="directory-title">Link directory</h2>
+      <div class="work-links">
+        <a class="feature" href="https://emanuelebartolesi.com" target="_blank" rel="noopener">
+          <span class="featured-label"><svg class="icon" aria-hidden="true"><use href="#spark"/></svg>Featured</span>
+          <div class="feature-copy">
+            <h3>Website &amp; blog</h3>
+            <p>My articles, talks, and projects.</p>
+            <span class="feature-cta">Visit my website <svg class="icon" aria-hidden="true"><use href="#out"/></svg></span>
+          </div>
+          <img class="feature-art" src="./images/browser-stack.svg" alt="" width="210" height="190">
+        </a>
+        <div class="work-list">
+          <a class="row" href="https://github.com/kasuken" target="_blank" rel="noopener">
+            <span class="tile"><svg class="icon" aria-hidden="true"><use href="#branch"/></svg></span>
+            <div><h3>GitHub</h3><p>Open-source projects and experiments</p></div>
+            <svg class="icon outbound" aria-hidden="true"><use href="#out"/></svg>
+          </a>
+          <a class="row" href="https://marketplace.visualstudio.com/publishers/emanuelebartolesi" target="_blank" rel="noopener">
+            <span class="tile extensions"><svg class="icon" aria-hidden="true"><use href="#blocks"/></svg></span>
+            <div><h3>VS Code Marketplace</h3><p>Browse my full extension catalog</p></div>
+            <svg class="icon outbound" aria-hidden="true"><use href="#out"/></svg>
+          </a>
+          <a class="row" href="https://www.linkedin.com/learning/instructors/emanuele-bartolesi" target="_blank" rel="noopener">
+            <span class="tile courses"><svg class="icon" aria-hidden="true"><use href="#course"/></svg></span>
+            <div><h3>LinkedIn Learning</h3><p>My developer courses</p></div>
+            <svg class="icon outbound" aria-hidden="true"><use href="#out"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="catalogs">
+      <section id="extensions" aria-labelledby="extensions-title">
+        <h2 class="section-title" id="extensions-title">VS Code extensions</h2>
+        <div class="catalog-list">
+          <a href="https://marketplace.visualstudio.com/items?itemName=emanuelebartolesi.vscode-repoboard" target="_blank" rel="noopener"><strong>Repo Board</strong><span>See which local repositories need attention.</span></a>
+          <a href="https://marketplace.visualstudio.com/items?itemName=emanuelebartolesi.vscode-copilot-insights" target="_blank" rel="noopener"><strong>Copilot Insights</strong><span>Keep an eye on Copilot credits and quotas.</span></a>
+          <a href="https://marketplace.visualstudio.com/items?itemName=emanuelebartolesi.taskdeck" target="_blank" rel="noopener"><strong>TaskDeck</strong><span>Run workspace tasks from the sidebar.</span></a>
+          <a href="https://marketplace.visualstudio.com/items?itemName=emanuelebartolesi.vscode-aiquota" target="_blank" rel="noopener"><strong>AI Quota</strong><span>Check allowances across AI providers.</span></a>
+          <details>
+            <summary>More extensions</summary>
+            <a href="https://marketplace.visualstudio.com/items?itemName=emanuelebartolesi.vscode-slidev-studio" target="_blank" rel="noopener"><strong>Slidev Studio</strong><span>Edit and present Slidev decks inside VS Code.</span></a>
+            <a href="https://marketplace.visualstudio.com/items?itemName=emanuelebartolesi.vscode-carbonbit" target="_blank" rel="noopener"><strong>CarbonBit</strong><span>Estimate the footprint of AI coding sessions.</span></a>
+          </details>
+        </div>
+      </section>
+      <section id="saas" aria-labelledby="saas-title">
+        <h2 class="section-title" id="saas-title">My SaaS products</h2>
+        <div class="catalog-list">
+          <a href="https://www.brainy-me.com" target="_blank" rel="noopener"><strong>Brainy</strong><span>Turn scattered notes into tasks and projects.</span></a>
+          <a href="https://learnstack.cloud" target="_blank" rel="noopener"><strong>LearnStack</strong><span>Organize what to learn and what to publish.</span></a>
+          <a href="https://needly.today" target="_blank" rel="noopener"><strong>Needly</strong><span>Find the GitHub activity that needs a decision.</span></a>
+          <a href="https://passwordify.xyz" target="_blank" rel="noopener"><strong>Passwordify</strong><span>Generate and check passwords in your browser.</span></a>
+          <details>
+            <summary>Products in development</summary>
+            <a href="https://www.emanuelebartolesi.com/products/moneybrain" target="_blank" rel="noopener"><strong>MoneyBrain</strong><span>Track spending and plan an envelope budget.</span></a>
+            <a href="https://www.emanuelebartolesi.com/products/relio" target="_blank" rel="noopener"><strong>Relio</strong><span>A private notebook for keeping in touch.</span></a>
+            <a href="https://www.emanuelebartolesi.com/products/lapfolio" target="_blank" rel="noopener"><strong>Lapfolio</strong><span>Keep endurance training and race goals together.</span></a>
+            <a href="https://www.emanuelebartolesi.com/products/daypulse" target="_blank" rel="noopener"><strong>DayPulse</strong><span>Explore patterns in daily wellbeing check-ins.</span></a>
+          </details>
+        </div>
+      </section>
+    </div>
+    <section class="desk" aria-labelledby="desk-title">
+      <h2 class="section-title" id="desk-title">On my desk</h2>
+      <div class="desk-links">
+        <a class="row" href="https://open.spotify.com/playlist/7f3kE1C4yNOtQ4WjNkLdk2?si=y2yNp_K5QleiBPZuMSws9A" target="_blank" rel="noopener">
+          <img class="thumb" src="./images/retrowave.jpg" alt="" width="56" height="56" loading="lazy">
+          <div><h3>Retrowave</h3><p>My coding playlist on Spotify</p></div>
+          <svg class="icon outbound" aria-hidden="true"><use href="#out"/></svg>
+        </a>
+        <a class="row" href="https://setup.emanuelebartolesi.com" target="_blank" rel="noopener">
+          <img class="thumb" src="./images/desk.webp" alt="" width="56" height="56" loading="lazy">
+          <div><h3>My desk setup</h3><p>Take a look around my workspace</p></div>
+          <svg class="icon outbound" aria-hidden="true"><use href="#out"/></svg>
+        </a>
+      </div>
+    </section>
   </main>
 
+  <footer id="elsewhere" class="wrap footer">
+    <h2>Elsewhere</h2>
+    <nav aria-label="Social profiles">
+      <a href="https://github.com/kasuken" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/bartolesiemanuele/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://bsky.app/profile/kasuken.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+      <a href="https://x.com/kasuken" target="_blank" rel="noopener">X</a>
+    </nav>
+    <small>&copy; <span id="year"></span> Emanuele Bartolesi</small>
+  </footer>
   <script>
-    // Spotlight effect following mouse cursor
-    const spotlight = document.querySelector('.spotlight');
-    document.addEventListener('mousemove', (e) => {
-      const x = e.clientX;
-      const y = e.clientY;
-      spotlight.style.background = `radial-gradient(800px circle at ${x}px ${y}px, var(--spotlight-color), transparent 40%)`;
-    });
-
-    // Theme toggle (Light / Dark mode)
-    const toggle = document.getElementById('darkToggle');
-    const html = document.documentElement;
-    const icon = toggle.querySelector('i');
-    
-    toggle.addEventListener('click', () => {
-      html.classList.toggle('light-mode');
-      if(html.classList.contains('light-mode')) {
-        icon.classList.replace('fa-sun', 'fa-moon');
-      } else {
-        icon.classList.replace('fa-moon', 'fa-sun');
+    const theme = document.getElementById('theme');
+    const page = document.documentElement;
+    theme.hidden = false;
+    theme.setAttribute('aria-pressed', String(page.dataset.theme === 'light'));
+    theme.addEventListener('click', () => {
+      const next = page.dataset.theme === 'light' ? 'dark' : 'light';
+      page.dataset.theme = next;
+      theme.setAttribute('aria-pressed', String(next === 'light'));
+      try {
+        localStorage.setItem('links-theme', next);
+      } catch (error) {
+        console.warn('Theme applies to this visit only.', error);
       }
     });
-
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
